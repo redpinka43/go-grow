@@ -1,0 +1,116 @@
+x  - Create a button which can be touched and pressed
+x  - Have the button do something visual when pressed
+x  - Build the scene and upload the file to my phone, where I can play it
+x  - Create a proper UI button, just to be familiar with Unity
+x  - Create simple plant part placeholder art in photoshop
+      - Flower pot
+      - Small leaf
+      - Mature flower 
+      - Orchid flower bud
+      - Orchid flower
+      - Wilted orchid flower
+      - Flower mini stem
+      - Flower stem segment
+      - Flower leaf
+x  - Import placeholder assets and assemble them into a flower shape
+
+
+
+
+  - BIG GOAL: Press a button in test scene that progresses flower
+              from a seedling to a mature flower in stages.
+              The shape of these stages are determined using a 
+              hex string (the flower generator's "seed").
+    Parts of this involve:
+
+    - Stem generation tweaks
+    x - Have angle changes follow a curve function
+      - Have distance changes follow a pattern (usually decreasing...)
+      - Increase variability of the node below the root node
+      - Have the 'height' of the nodes decrease as it grows
+      - Record the stems' nodes in the stem component
+      - Vary the root node's location
+      - Add mirrored stem parameter
+      - Vary the number of stems
+
+    - Having flower mini-stems shoot off at parts along the stem
+      - Have a mini stem shoot off at a node
+      - Generate a list of 'possible ministem positions'
+      - Generate a mini stem at a position if it passes a probability
+        curve and a random test
+    - Organize 2BezierSpline functions in Spline2D into a new class
+    - Organize OrchidController functions into their own classes
+    - Having flower buds age and grow according to their 'age'
+    
+
+
+
+
+
+
+    ON HOLD:
+    - (get flower stuff done first) Having new leaves be created, sized, 
+      and oriented
+      - Try changing scale of x and y of the leaves randomly
+      - Change the scale of previous leaves as they get "flattened"
+      - Have the new leaf poke up in between stages
+
+
+  - BIG GOAL: Create flower gentle breeze movement.
+    - Have leaves sway up and down a little
+    - Have stem move left and right a little, with the end of the 
+        stem having a slight whiplash
+    - Have flowers lag behind a tiny bit, but follow movement
+
+  - BIG GOAL: Create more variation in orchids.
+    Parts of this involve:
+    - Flower color
+    - Flower pattern
+    - Flower shape
+    - Flower number
+    - Flower placement
+    - Stem number
+    - Stem branching
+    - Stem direction
+    - Leaf # and orientation 
+    - Flower lifespan
+
+  - BIG GOAL: Create an actual game scene, with the most basic
+              functionality (place flowers, move flowers).
+    - Create home screen placeholder art assets
+      - Shelves
+      - Background
+      - Non-functional placeholder UI
+      - Sprite that indicates a spot where a plant can be placed
+    - Create a game scene, arrange art assets in it
+    - Create ability to place a flower after pressing a 'shop' button
+    - Create ability to move a flower to another spot
+
+  - BIG GOAL: Create a shop scene, where you can get more flowers.
+    - Create UI showing how much money you have.
+    - Have the 'shop' button move you to a new 'shop' scene
+    - No fanciness yet, you just see a selection of plants and their
+      prices.
+    - Clicking on a plant asks you whether you want to buy it.
+    - Clicking 'yes' adds the plant to your inventory.
+    - You can place the plant in your greenhouse by clicking the 'home'
+      button and placing it.
+
+  - BIG GOAL: Polish home screen
+    - Add sunrays that move
+    - Add occasional insects outside
+    - Add birds that fly outside
+    - Create night scene
+    - Create rainy scene
+    - Create snowy scene
+
+
+
+
+
+
+
+
+
+
+
